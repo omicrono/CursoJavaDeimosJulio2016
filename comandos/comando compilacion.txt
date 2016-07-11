@@ -1,0 +1,1 @@
+C:\Users\curso\workspace\01-Compilacion>javac -sourcepath src -cp bin;..\lib\commons-lang3-3.4.jar -d bin src\com\curso\java\compilacion\*.java
