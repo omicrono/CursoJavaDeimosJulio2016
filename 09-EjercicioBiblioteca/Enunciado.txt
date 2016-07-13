@@ -18,5 +18,5 @@ Y los requisitos para la aplicacion son
 	-Que se pueda dar de alta tanto un libro como un usuario
 	-Que el usuario se pueda identificar para realizar operaciones de prestamos y reserva
 	-Prestar un libro a un usuario
-	-Reservar un libro para un usuario
+	-Reservar un libro para un usuario. Si el libro ya esta reservado, no se ha de hacer la operacion y se ha de avisar al usuario de que no se ha hecho.
 	-Devolver un libro.
