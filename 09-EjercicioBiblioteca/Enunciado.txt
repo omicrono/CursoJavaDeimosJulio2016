@@ -1,0 +1,22 @@
+Crear la arquitectura (Vista, Controlador, Servicio, Negocio, Persistencia) para una aplicacion de gestion de 
+prestamos, donde las entidades son
+
+Libro
+	Titulo
+	Autor
+	ISBN
+	Numero de paginas
+	Estado (prestado o disponible o reservado)
+	
+Usuario
+	Id
+	Nombre
+	Password
+	LibrosPrestados
+	
+Y los requisitos para la aplicacion son
+	-Que se pueda dar de alta tanto un libro como un usuario
+	-Que el usuario se pueda identificar para realizar operaciones de prestamos y reserva
+	-Prestar un libro a un usuario
+	-Reservar un libro para un usuario
+	-Devolver un libro.

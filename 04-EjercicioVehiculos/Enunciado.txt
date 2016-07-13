@@ -1,0 +1,8 @@
+Modelar en clases las siguientes entidades
+
+	Vehiculo (color y marca) (mover() y mover(int))
+	Coche (potencia) (mover() y mover(int))
+	Bicicleta (tipo) (mover() y mover(int))
+	FormulaUno (piloto) (mover() y mover(int))
+	
+Aplicar Herencia, Encapsulacion y Polimorfismo
