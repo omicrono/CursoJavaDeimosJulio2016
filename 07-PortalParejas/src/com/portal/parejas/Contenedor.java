@@ -1,15 +1,17 @@
 package com.portal.parejas;
 
+import com.portal.parejas.negocio.NegocioBasico;
+import com.portal.parejas.persistencia.PersonaJdbcDao;
 import com.portal.parejas.servicio.ServicioPortalParejas;
 
 public class Contenedor {
 
-	private PersistenciaJDBC persistencia;
+	private PersonaJdbcDao persistencia;
 	private ServicioPortalParejas servicio;
 	private NegocioBasico negocio;
 	
 	public Contenedor() {
-		persistencia =  new PersistenciaJDBC();
+		persistencia =  new PersonaJdbcDao();
 		negocio = new NegocioBasico();
 		servicio = new ServicioPortalParejas(persistencia, negocio);
 	}

@@ -5,7 +5,7 @@ public class Algoritmo {
 	public void metodo(boolean estado) throws MiPropiaException {
 
 		if(!estado){
-			throw new MiPropiaException();
+			throw new MiPropiaException("Mensaje generado cuando se genera la excepcion");
 		}
 		
 		

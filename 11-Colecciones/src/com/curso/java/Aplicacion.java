@@ -35,6 +35,11 @@ public class Aplicacion {
 		list.add(persona);
 		list.add(persona2);
 		
+		
+		LinkedList<String> linkedList = new LinkedList<>();
+		
+		linkedList.add("Cualquier String");
+		
 		Persona persona3 = list.get(0);
 		
 		if (persona.getNombre().equals(persona3.getNombre())){

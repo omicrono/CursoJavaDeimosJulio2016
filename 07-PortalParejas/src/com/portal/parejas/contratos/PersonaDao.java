@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.portal.parejas.entidades.Persona;
 
-public interface Persistencia {
+public interface PersonaDao {
 
 	int insertar(Persona persona);
 	

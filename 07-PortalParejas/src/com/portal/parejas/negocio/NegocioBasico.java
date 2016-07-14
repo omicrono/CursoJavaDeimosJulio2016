@@ -1,4 +1,4 @@
-package com.portal.parejas;
+package com.portal.parejas.negocio;
 
 import com.portal.parejas.contratos.Negocio;
 import com.portal.parejas.entidades.Persona;

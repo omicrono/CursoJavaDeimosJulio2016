@@ -4,18 +4,18 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.portal.parejas.contratos.Negocio;
-import com.portal.parejas.contratos.Persistencia;
+import com.portal.parejas.contratos.PersonaDao;
 import com.portal.parejas.contratos.Servicio;
 import com.portal.parejas.entidades.Persona;
 
 public class ServicioPortalParejas implements Servicio {
 
 	// Dependencias
-	private Persistencia persistencia = null;
+	private PersonaDao persistencia = null;
 	private Negocio negocio = null;
 
 	// Inyeccion por setter
-	public void setPersistencia(Persistencia persistencia) {
+	public void setPersistencia(PersonaDao persistencia) {
 		this.persistencia = persistencia;
 	}
 
@@ -24,7 +24,7 @@ public class ServicioPortalParejas implements Servicio {
 	}
 
 	// Inyeccion por constructor
-	public ServicioPortalParejas(Persistencia persistencia, Negocio negocio) {
+	public ServicioPortalParejas(PersonaDao persistencia, Negocio negocio) {
 		super();
 		this.persistencia = persistencia;
 		this.negocio = negocio;
