@@ -6,9 +6,9 @@ import com.portal.parejas.entidades.Persona;
 
 public interface Servicio {
 	
-	int alta(Persona persona);
+	int alta(Persona persona) throws Exception;
 	
-	Persona login(String nombre, String password);
+	Persona login(String nombre, String password) throws Exception;
 	
 	/**
 	 * 
@@ -17,10 +17,11 @@ public interface Servicio {
 	 * 
 	 * @param elQuebusca
 	 * @return
+	 * @throws Exception 
 	 */
 	
-	List<Persona> buscarAfines(Persona elQuebusca);
+	List<Persona> buscarAfines(Persona elQuebusca) throws Exception;
 	
-	Persona buscarIdeal(Persona elQuebusca);
+	Persona buscarIdeal(Persona elQuebusca) throws Exception;
 	
 }

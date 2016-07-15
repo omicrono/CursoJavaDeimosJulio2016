@@ -31,7 +31,7 @@ public class ServicioPortalParejas implements Servicio {
 	}
 
 	@Override
-	public int alta(Persona persona) {
+	public int alta(Persona persona) throws Exception {
 		// Dara de alta el nuevo usuario de la aplicacion (BD)
 		int clave = persistencia.insertar(persona);
 		// Se le enviara un correo electronico de bienvenida
@@ -40,12 +40,12 @@ public class ServicioPortalParejas implements Servicio {
 	}
 
 	@Override
-	public Persona login(String nombre, String password) {
+	public Persona login(String nombre, String password) throws Exception {
 		return persistencia.consultarPorNombreYPassword(nombre, password);
 	}
 
 	@Override
-	public List<Persona> buscarAfines(Persona elQueBusca) {
+	public List<Persona> buscarAfines(Persona elQueBusca) throws Exception {
 		// Listado de Afines
 		List<Persona> afines = new LinkedList<>();
 
@@ -62,7 +62,7 @@ public class ServicioPortalParejas implements Servicio {
 	}
 
 	@Override
-	public Persona buscarIdeal(Persona elQueBusca) {
+	public Persona buscarIdeal(Persona elQueBusca) throws Exception {
 		// Obtener todos los candidatos
 		List<Persona> candidatos = persistencia.consultarTodos();
 
